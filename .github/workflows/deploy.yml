@@ -23,6 +23,9 @@ jobs:
     - name: Install PHP and dependencies
       run: sudo apt-get update && sudo apt-get install php php-mbstring php-xml
 
+    - name: Install Composer update
+      run: composer update --no-interaction --prefer-dist --optimize-autoloader
+      
     - name: Install Composer dependencies
       run: composer install --no-interaction --prefer-dist --optimize-autoloader
 
