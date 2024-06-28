@@ -1,1 +1,36 @@
+# Exclude development and local environment files
+/.env
+/.env.example
+/.env.*.local
+
+# Exclude Composer related files
+/vendor/
+/composer.json
+/composer.lock
+
+# Exclude NPM and Node.js related files
+/node_modules/
+/package.json
+/package-lock.json
+
+# Exclude development and testing directories
+/tests/
+/phpunit.xml
+/phpunit.xml.dist
+
+# Exclude Laravel storage directory (it should be writable on server)
+/storage/
+
+# Exclude Laravel specific cache and session directories
+/bootstrap/cache/
+/storage/framework/
+/storage/logs/
+
+# Exclude server-specific directories and files
+/.git/
+/.github/
+/.gitignore
+
+# Exclude macOS system files (if developing on macOS)
+.DS_Store
 
